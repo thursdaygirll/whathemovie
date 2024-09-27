@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Gabriel Sans Cond-Trial';
+    src: url('../fonts/GabrielSansCond-Trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #121212;
+    color: #D8D8D8;
+    font-family: 'Gabriel Sans Cond-Trial', sans-serif;
+  }
+  
+  footer p {
+    font-size: 12px;
+  }
