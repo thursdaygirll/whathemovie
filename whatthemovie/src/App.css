@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Awakening';
+  src: url('./fonts/TTF/AWAKENNING Personal Use.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gabriel Sans Cond-Trial';
+  src: url('./fonts/TTF/GabrielSansCond-Trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212; 
+  color: #D8D8D8; 
+}
+
+.title {
+  font-size: 64px;
+  color: #930D0D; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.movie-card-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.start-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #930D0D; 
+}
+
+.movie-card {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(33px); 
+}
+
+.movie-card:hover img {
+  filter: blur(0); 
+}
