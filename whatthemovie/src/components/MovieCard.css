@@ -19,3 +19,17 @@
   .movie-card:hover img {
     filter: blur(33px); 
   }
+
+  @font-face {
+    font-family: 'Gabriel Sans Cond';
+    src: url('../fonts/TTF/GabrielSansCond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Awakening';
+    src: url('../fonts/TTF/AWAKENNING.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
