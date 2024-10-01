@@ -1,9 +1,16 @@
 @font-face {
-    font-family: 'Gabriel Sans Cond-Trial';
-    src: url('../fonts/GabrielSansCond-Trial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Gabriel Sans Cond';
+  src: url('../fonts/TTF/GabrielSansCond.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Awakening';
+  src: url('../fonts/TTF/AWAKENNING.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   
   footer {
     text-align: center;
