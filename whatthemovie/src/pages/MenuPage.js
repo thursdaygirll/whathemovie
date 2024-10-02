@@ -20,7 +20,7 @@ const MenuPage = () => {
           <GenreCard key={index} genre={genre.name} image={genre.image} />
         ))}
       </div>
-      <button className="start-button">papapa</button>
+      <button className="start-button"><a href='/'>papapapa</a></button>
     </div>
   );
 };

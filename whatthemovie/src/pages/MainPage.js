@@ -13,7 +13,7 @@ const MainPage = () => {
           <MovieCard key={index} image={image} />
         ))}
       </div>
-      <button className="start-button">Start Game</button>
+      <button className="start-button"><a href="/menu">Start Game</a></button>
     </div>
   );
 };
