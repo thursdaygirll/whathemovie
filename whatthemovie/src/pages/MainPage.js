@@ -1,21 +1,27 @@
 import React from 'react';
-import MovieCard from '../components/MovieCard';
+import TitleCard from '../components/TitleCard';
 import './MainPage.css';
-import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
-  const navigate=useNavigate();
-  const movieImages = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+  const movieImages = [
+    { src: 'image1.jpg', alt: 'Movie 1', className: 'image-left' },
+    { src: 'image2.jpg', alt: 'Movie 2', className: 'image-top' },
+    { src: 'image3.jpg', alt: 'Movie 3', className: 'image-right' },
+    { src: 'image4.jpg', alt: 'Movie 4', className: 'image-bottom' }
+  ];
 
   return (
     <div className="main-page">
-      <h1 className="title">Movie Guesser</h1>
-      <div className="movie-frame-container">
-        {movieImages.map((image, index) => (
-          <MovieCard key={index} image={image} />
-        ))}
+      <div className="background-film-effect">
+      
+      {/* Image placements */}
+      {movieImages.map((image, index) => (
+        <img key={index} src={image.src} alt={image.alt} className={movie-image ${image.className}} ></img>
+      ))}
+
+      {/* Title card with play button */}
+      <TitleCard />
       </div>
-      <button className="start-button" onClick={()=>navigate("/menu")}>Start Game</button>
     </div>
   );
 };
