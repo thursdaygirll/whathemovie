@@ -1,8 +1,10 @@
 import React from 'react';
 import MovieCard from '../components/MovieCard';
 import './MainPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
+  const navigate=useNavigate();
   const movieImages = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
 
   return (
@@ -13,7 +15,7 @@ const MainPage = () => {
           <MovieCard key={index} image={image} />
         ))}
       </div>
-      <button className="start-button"><a href="/menu">Start Game</a></button>
+      <button className="start-button" onClick={()=>navigate("/menu")}>Start Game</button>
     </div>
   );
 };
