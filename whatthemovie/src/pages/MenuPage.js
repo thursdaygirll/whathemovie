@@ -1,8 +1,10 @@
 import React from 'react';
 import GenreCard from '../components/GenreCard';
+import { useNavigate } from 'react-router-dom';
 import './MenuPage.css';
 
 const MenuPage = () => {
+  const navigate=useNavigate();
   const genres = [
     { name: 'Sci-Fi', image: 'scifi.jpg' },
     { name: 'Romance', image: 'romance.jpg' },
@@ -20,7 +22,7 @@ const MenuPage = () => {
           <GenreCard key={index} genre={genre.name} image={genre.image} />
         ))}
       </div>
-      <button className="start-button"><a href='/'>papapapa</a></button>
+      <button className="start-button" onClick={()=>{navigate('/')}}>papapapapa</button>
     </div>
   );
 };
